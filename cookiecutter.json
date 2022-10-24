@@ -1,9 +1,9 @@
 {
-  "full_name": "Brian Carpio",
-  "company_name": "Comcast",
-  "email": "brian_carpio@comcast.com",
+  "full_name": "John Doe",
+  "company_name": "Gilead",
+  "email": "john_doe@gilead.com",
   "module_name": "template",
   "short_description": "A Terraform Module",
-  "year": "2018",
+  "year": "2022",
   "version": "0.1.0"
 }
