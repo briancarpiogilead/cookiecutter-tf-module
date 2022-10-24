@@ -8,7 +8,7 @@ provisioner:
   name: terraform
 
 platforms:
-  - name: ubuntu
+  - name: aws
 
 transport:
   name: ssh
@@ -16,10 +16,15 @@ transport:
 
 verifier:
   name: terraform
-  groups:
-    - name: default
-      hostnames: public_dns
-      username: ubuntu
 
 suites:
   - name: default
+    verifier:
+      systems:
+        - name: {{cookiecutter.module_name}}
+          backend: aws
+          reporter:
+            - cli
+            - junit:test/integration/default/junit/junit.xml
+      patterns:
+        - test/integration/default/controls/*_spec.rb

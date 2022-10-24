@@ -1,5 +1,6 @@
+repos:
 - repo: https://github.com/antonbabenko/pre-commit-terraform
-  sha: v1.76.0
+  rev: v1.76.0
   hooks:
   - id: terraform_validate
   - id: terraform_fmt
@@ -9,3 +10,5 @@
   - id: terraform_tflint
   - id: terraform_tfsec
   - id: terrascan
+    args:
+      - --args=--non-recursive

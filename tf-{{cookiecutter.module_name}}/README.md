@@ -16,6 +16,25 @@ pre-commit install
 
 ## Kitchen
 
+* Install rbenv
+
+```
+brew install rbenv ruby-build
+```
+
+* Install Ruby 
+
+```
+rbenv install 3.1.2
+```
+
+* Set global Ruby Version
+
+```
+rbenv global 3.1.2
+```
+
+
 * Install the required ruby gems
 
 ```
