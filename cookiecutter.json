@@ -1,7 +1,7 @@
 {
   "full_name": "John Doe",
-  "company_name": "Gilead",
-  "email": "john_doe@gilead.com",
+  "company_name": "Amazon",
+  "email": "john_doe@amazon.com",
   "module_name": "template",
   "short_description": "A Terraform Module",
   "year": "2022",
